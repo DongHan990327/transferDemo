@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  align-items: center;
+  .box {
+    height: 300px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    .boxHeader {
+      height: 40px;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      .radio {
+        height: 15px;
+        width: 15px;
+        color: #000;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+    }
+    .boxTitle {
+      flex: 1;
+      text-align: right;
+    }
+    .boxContent {
+      overflow-y: auto;
+      flex: 1;
+      .boxItem {
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        &:hover {
+          background: rgb(217, 233, 239);
+          cursor: pointer;
+        }
+        .radio {
+          height: 15px;
+          width: 15px;
+          color: #000;
+          margin-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #000;
+        }
+      }
+
+      .selectedItem {
+        background: gold;
+        &:hover {
+          background: rgb(228, 195, 7);
+        }
+      }
+    }
+  }
+
+  .arrow {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    & > div {
+      font-size: 30px;
+      cursor: pointer;
+      &:hover {
+        color: skyblue;
+      }
+    }
+  }
+}
