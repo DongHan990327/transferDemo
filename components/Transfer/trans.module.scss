@@ -1,0 +1,36 @@
+.transferWrapper {
+  width: 500px;
+  border: solid 1px red;
+  padding: 12px;
+  display: flex;
+  .controlBtnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    > button {
+      margin-bottom: 10px;
+      color: #fff;
+      background: cornflowerblue;
+      border: none;
+      &[disabled] {
+        color: #e3e3e3;
+        background: gray;
+      }
+    }
+  }
+  .leftBox,
+  .rightBox {
+    flex: 1;
+    height: 300px;
+    overflow: auto;
+    border: solid 1px #333;
+    .liItem {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 6px;
+      border-bottom: solid 1px #e3e3e3;
+    }
+  }
+}
