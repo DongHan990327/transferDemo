@@ -1,0 +1,47 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left,
+.right {
+  width: 200px;
+  aspect-ratio: 1/1.5;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.data, .data :where(input,label) {
+  cursor: pointer !important;
+}
+.data {
+  margin: 5px 0;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+:where(.left,.right) label {
+  margin-left: 5px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center > button {
+  margin: 0 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
